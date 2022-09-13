@@ -1,0 +1,139 @@
+/*-------------------------------------RESET---------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*: before,*:after {
+  -moz-box-sizing: border-box;
+  webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: -1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input: ::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+/*-------------------------------------------MAIN-----------------------------------------------------------*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  color: white;
+}
+.calculator__body {
+  box-sizing: border-box;
+  width: 400px;
+  height: 600px;
+  background-color: rgb(30, 30, 30);
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.calculator__screen {
+  font-size: 84px;
+  text-align: end;
+  height: 100px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
+}
+.calculator__buttons__container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.calculator__btn {
+  display: flex;
+  width: 90px;
+  height: 90px;
+  background-color: rgb(68, 68, 68);
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+  user-select: none;
+}
+.calculator__btn:not(:nth-child(4n)) {
+  margin-right: 5px;
+}
+.calculator__btn:hover {
+  filter: brightness(120%);
+}
+.calculator__btn:active {
+  filter: brightness(90%);
+}
+.orange {
+  background-color: rgb(226, 149, 5);
+}
+.white {
+  background-color: whitesmoke;
+  color: rgb(30, 30, 30);
+}
+.zero {
+  flex-grow: 1;
+  border-radius: 115px;
+}
